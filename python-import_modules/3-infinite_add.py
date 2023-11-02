@@ -2,7 +2,7 @@
 
 if __name__ == "__main__":
     """Print the addition of all arguments."""
-    import args
+    import sys
     def sum_all(*args):
     sum = 0
 
