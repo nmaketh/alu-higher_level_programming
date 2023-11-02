@@ -1,14 +1,12 @@
 #!/usr/bin/python3
+# 3-infinite_add.py
+# Brennan D Baraban <375@holbertonschool.com>
 
 if __name__ == "__main__":
     """Print the addition of all arguments."""
     import sys
-    def sum_all(*args):
-    sum = 0
 
-    for num in args:
-        if not str(num).isdigit():
-            return False
-        else:
-            sum += int(num)
-    return sum
+    total = 0
+    for i in range(len(sys.argv) - 1):
+        total += int(sys.argv[i + 1])
+    print("{}".format(total))
