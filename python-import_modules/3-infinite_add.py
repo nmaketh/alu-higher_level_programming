@@ -2,9 +2,13 @@
 
 if __name__ == "__main__":
     """Print the addition of all arguments."""
-    import sys
+    import args
+    def sum_all(*args):
+    sum = 0
 
-    total = 0
-    for i in range(len(sys.argv) - 1):
-        total += int(sys.argv[i + 1])
-    print("{}".format(total))
+    for num in args:
+        if not str(num).isdigit():
+            return False
+        else:
+            sum += int(num)
+    return sum
