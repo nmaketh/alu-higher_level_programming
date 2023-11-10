@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-# 6-print_sorted_dictionary.py
-
-
 def print_sorted_dictionary(a_dictionary):
-    """Print a dictionary by ordered keys."""i
-    [print("{}: {}".format(k, a_dictionary[k])) for k in sorted(a_dictionary)]
+    sorted_dictionary = sorted(a_dictionary.items())
+
+    for k, v in sorted_dictionary:
+        print('{0}: {1}'.format(k, v))
