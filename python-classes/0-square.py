@@ -3,7 +3,12 @@
 
 class square:
     pass
-"""Write an empty class Square that defines a square:
+    """python3 -c 'print(__import__("my_module").__doc__)'
+python3 -c 'print(__import__("my_module").MyClass.__doc__)'
 
-You are not allowed to import any module
 """
+    def __init__(self):
+        """python3 -c 'print(__import__("my_module").my_function.__doc__)'
+         python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)'
+         
+         """
