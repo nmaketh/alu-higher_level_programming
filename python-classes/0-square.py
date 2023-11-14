@@ -3,5 +3,5 @@
 
 """ write an empty class square that defines a square:"""
 class square:
-    """an empty square."""
+    """an empty class square."""
     pass
