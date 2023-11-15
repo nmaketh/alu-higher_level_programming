@@ -4,6 +4,5 @@
 
 """Defines a class square."""
 class square:
-    """an empty class square."""
+    """represent an empty class square."""
     pass
-
