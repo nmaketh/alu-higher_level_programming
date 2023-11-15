@@ -8,4 +8,4 @@ class Square:
     pass
 my_square = Square()
 print(type(my_square))
-print(my_isquare.__dict__)
+print(my_square.__dict__)
