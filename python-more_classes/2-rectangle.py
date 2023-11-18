@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 # 1-rectangle.py
-# Brennan D Baraban <375@holbertonschool.com>
 """Defines a Rectangle class."""
 
 
@@ -45,6 +44,6 @@ class Rectangle:
     def area(self):
         return self.__width*self.__height
     def perimeter(self):
-        if width or height == 0:
+        if self.__width or self.__height == 0:
            return 0
-        return (self.__width*2)+(sef.__height*2)
+        return 2*(self.__width + sef.__height)
