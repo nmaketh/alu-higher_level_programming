@@ -13,8 +13,6 @@ class Square:
     def ___init___(self, size=0):
         """initialise the square"""
         self.__size = size
-    def area(self):
-        return pow(self.__size, 2)
     @property
     def size(self):
         """getting method """
@@ -24,6 +22,8 @@ class Square:
         """setting method"""
         if isinstance(type(value), int):
             raise TypeError("size must be an integer")
-        if value <0:
+        elif value <0:
             raise ValueError("size must be >= 0")
         self.__size = value
+    def area(self):
+        return pow(self.__size, 2)
