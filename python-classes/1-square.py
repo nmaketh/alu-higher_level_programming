@@ -3,6 +3,7 @@
 
 """Defines Square based on 0-square.py file"""
 
+
 class Square:
      """represent the square."""
 
