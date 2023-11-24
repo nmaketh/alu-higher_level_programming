@@ -1,11 +1,30 @@
-#!/usr/bin/python3
-# 1-my_list.py
-"""Defines an inherited list class MyList."""
+>>> MyList = _import_('1-my_list').MyList
 
+>>> new_list = MyList()
 
-class MyList(list):
-    """Implements sorted printing for the built-in list class."""
+>>> new_list
+[]
 
-    def print_sorted(self):
-        """Print a list in sorted ascending order."""
-        print(sorted(self))
+>>> new_list.print_sorted()
+[]
+
+>>> new_list.append(4)
+
+>>> new_list
+[4]
+
+>>> new_list.append(2)
+
+>>> new_list
+[4, 2]
+
+>>> new_list.append(-1)
+
+>>> new_list
+[4, 2, -1]
+
+>>> new_list.print_sorted()
+[-1, 2, 4]
+
+>>> new_list
+[4, 2, -1]
