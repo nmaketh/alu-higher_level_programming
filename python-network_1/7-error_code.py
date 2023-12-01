@@ -1,4 +1,4 @@
-#!/usr/bin/pytho3
+#!/usr/bin/python3
 """Send a request to a given URL and displays the response body.
 
 Usage: ./7-error_code.py <URL>
